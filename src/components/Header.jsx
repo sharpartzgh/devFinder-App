@@ -7,7 +7,7 @@ import { BsSun } from 'react-icons/bs'
 
 const Header = ({handleDarkMode, darkMode}) => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between lg:w-[50%]'>
       <div>
         <h1>devFinder</h1>
       </div>

@@ -14,7 +14,7 @@ function App() {
   }
   
   return (
-    <div className={`${darkMode ? 'bg-[#141D2F] text-white' : 'bg-[#F6F8FF]'} 'min-h-screen lg:w-[100%] lg:mx-auto py-8 px-5 '`}>
+    <div className={`${darkMode ? 'bg-[#141D2F] text-white' : 'bg-[#F6F8FF]'} min-h-screen lg:w-[85%] lg:mx-auto py-20 px-5 flex flex-col items-center`}>
      <Header handleDarkMode={handleDarkMode} darkMode={darkMode} />
      <TheSearchBar darkMode={darkMode}/>
      <Card darkMode={darkMode}/>

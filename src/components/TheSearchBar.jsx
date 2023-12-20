@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 
@@ -5,7 +7,7 @@ const TheSearchBar = ({darkMode}) => {
   // 
   // 
   return (
-    <div className={`${darkMode ? 'bg-[#1E2A47] ': 'bg-white '} py-2 px-2 mt-4 rounded-md shadow-md`}>
+    <div className={`${darkMode ? 'bg-[#1E2A47] ': 'bg-white '} py-2 px-2 mt-4 rounded-md shadow-md lg:w-[50%]`}>
         <div className='flex items-center justify-between'>
           <div className='flex items-center gap-4'>
             <CiSearch className='text-[#0079FF] text-[24px]' />
