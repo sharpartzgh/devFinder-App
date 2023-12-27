@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+import { data } from 'autoprefixer';
 import React, { useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 
-const TheSearchBar = ({darkMode, fetchUserData, error}) => {
+const TheSearchBar = ({darkMode, fetchUserData}) => {
   const [query, setQuery] = useState('')
   
   const handleSubmit = () => {
@@ -14,9 +15,6 @@ const TheSearchBar = ({darkMode, fetchUserData, error}) => {
       setQuery('')
     }
   }
- // 
-  
-  
   // 
   return (
     <div className={`${darkMode ? 'bg-[#1E2A47] ': 'bg-white '} py-2 px-2 mt-4 rounded-md shadow-md m-auto w-full`}>
@@ -30,7 +28,7 @@ const TheSearchBar = ({darkMode, fetchUserData, error}) => {
             className={`${darkMode ? 'bg-[#1E2A47] text-white': 'bg-white  text-[#222731]'} outline-none py-1 px-1`} />
           </div>
           <div>
-            <span className="px-3 text-red-500">{}</span>
+            <span className=' px-3 text-red-500'>No results</span>
             <button 
             type='submit' 
             onClick={handleSubmit}

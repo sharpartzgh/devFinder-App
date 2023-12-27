@@ -47,7 +47,7 @@ const fetchUserData = async (getUser) => {
     <div className={`${darkMode ? 'bg-[#141D2F] text-white' : 'bg-[#F6F8FF]'} w-[100%] h-screen `}>
       <div className={`${darkMode ? 'bg-[#141D2F] text-white' : 'bg-[#F6F8FF]'} sm:w-[46%] md:w-[60%] lg:w-[50%] pt-5 px-5 flex flex-col items-center m-auto`}>
      <Header handleDarkMode={handleDarkMode} darkMode={darkMode} />
-     <TheSearchBar darkMode={darkMode} fetchUserData={fetchUserData} />
+     <TheSearchBar darkMode={darkMode} fetchUserData={fetchUserData}/>
      <Card darkMode={darkMode} fetchUser={getUser}/>
      </div>
     </div>
