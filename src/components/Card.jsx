@@ -13,7 +13,7 @@ const Card = ({darkMode, fetchUser}) => {
     <div className={`${darkMode ? 'bg-[#1E2A47] ': 'bg-white '} py-3 px-3 mt-4 rounded-md shadow-md flex gap-6 w-full`}>
       <div>
       {fetchUser ? (
-          <img src={fetchUser.avatar_url} alt="user-image" className=' rounded-full h-[100px] w-[150px]' />) : 
+          <img src={fetchUser.avatar_url} alt="user-image" className=' rounded-full h-[110px] w-[150px]' />) : 
           (<img src={Oval} alt="default-user-image" />)}
       </div>
       <div className='w-full flex flex-col gap-3'>
