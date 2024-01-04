@@ -31,7 +31,7 @@ const fetchUserData = async (getUser) => {
       });
       // so after the data fetch is done where do we store it and use it? let us create a variable to hold
       const data = await response.data
-      console.log(response.data);
+      console.log(data);
       // now that we have the data lets set the setLoading to false so we can use the fetched data
       setLoading(false)
       setGetUser(data) // now we have assigned the entire fetched data to the useState setgetUser
@@ -47,7 +47,7 @@ const fetchUserData = async (getUser) => {
     <div className={`${darkMode ? 'bg-[#141D2F] text-white' : 'bg-[#F6F8FF]'} w-[100%] h-screen `}>
       <div className={`${darkMode ? 'bg-[#141D2F] text-white' : 'bg-[#F6F8FF]'} sm:w-[46%] md:w-[60%] lg:w-[50%] pt-5 px-5 flex flex-col items-center m-auto`}>
      <Header handleDarkMode={handleDarkMode} darkMode={darkMode} />
-     <TheSearchBar darkMode={darkMode} fetchUserData={fetchUserData} error={error}/>
+     <TheSearchBar darkMode={darkMode} fetchUserData={fetchUserData} error={error} fetchUser={getUser} />
      <Card darkMode={darkMode} fetchUser={getUser}/>
      </div>
     </div>

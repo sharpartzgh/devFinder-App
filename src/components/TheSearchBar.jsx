@@ -1,19 +1,19 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { data } from 'autoprefixer';
 import React, { useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 
-const TheSearchBar = ({darkMode, fetchUserData, error}) => {
+const TheSearchBar = ({darkMode, fetchUserData, error, fetchUser}) => {
   const [query, setQuery] = useState('')
-  
+
   const handleSubmit = () => {
     if(!query){
       alert('Field is required')
-    } else{
+    } else {
       fetchUserData(query)
       setQuery('')
-    }
+    }  
+
   }
   // 
   return (
@@ -28,7 +28,9 @@ const TheSearchBar = ({darkMode, fetchUserData, error}) => {
             className={`${darkMode ? 'bg-[#1E2A47] text-white': 'bg-white  text-[#222731]'} outline-none py-1 px-1`} />
           </div>
           <div>
-            <span className=' px-3 text-red-500'>{error ? error.message : null}</span>
+
+             <span className=' px-3 text-red-500'>{fetchUserData.login ? null : error}</span>
+            
             <button 
             type='submit' 
             onClick={handleSubmit}
