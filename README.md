@@ -20,10 +20,10 @@ link will be added when mobile display is fixed...
 
 ## Installation
 
-To install and run devFinder locally, you need to have Node.js and npm installed on your machine. Then follow these steps:
+To install and run devFinder-App locally, you need to have Node.js and npm installed on your machine. Then follow these steps:
 
-- Clone the repository: `git clone https://github.com/your-username/todovite.git`
-- Navigate to the project folder: `cd devFinder`
+- Clone the repository: `git clone https://github.com/your-username/devFinder-App.git`
+- Navigate to the project folder: `cd devFinder-App`
 - Install the dependencies: `npm install`
 - Start the development server: `npm run dev`
 - Open your browser and go to `http://localhost:3000`
@@ -40,7 +40,7 @@ To use TdevFinder, simply type a github user name in the input field and press t
 - [Vite](https://vitejs.dev/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [Netlify](https://app.netlify.com)
+
 
 ## Author
 
