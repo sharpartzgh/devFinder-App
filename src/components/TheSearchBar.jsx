@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 
-const TheSearchBar = ({darkMode, fetchUserData, error, fetchUser}) => {
+const TheSearchBar = ({darkMode, fetchUserData, error}) => {
   const [query, setQuery] = useState('')
 
   const handleSubmit = () => {
@@ -29,7 +29,7 @@ const TheSearchBar = ({darkMode, fetchUserData, error, fetchUser}) => {
           </div>
           <div>
 
-             <span className=' px-3 text-red-500'>{fetchUserData.login ? null : error}</span>
+             <span className=' px-3 text-red-500'>{ error && !fetchUserData.login && error}</span>
             
             <button 
             type='submit' 
