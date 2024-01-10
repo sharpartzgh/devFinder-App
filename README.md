@@ -3,7 +3,7 @@
 devFinder is a simple app built with React and Vite. It allows you to search for a github user. Has a Dark and Light mode user interface as well.
 
 ## Live Demo
-[Click Me](sharpartz-devfinder-app.netlify.app)
+[Click Me](https://sharpartz-devfinder-app.netlify.app/)
 
 ## Table of Contents
 - Features
